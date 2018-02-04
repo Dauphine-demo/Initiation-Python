@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon super Titre</title>
+        <meta charset="utf-8">
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+            @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+            @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+            body { font-family: 'Droid Serif'; }
+
+            h1, h2, h3 {
+                font-family: 'Yanone Kaffeesatz';
+                font-weight: normal;
+            }
+                
+            .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+			/* Two-column layout */
+			.left-column {
+              color: #777;
+              width: 20%;
+              height: 92%;
+              float: left;
+            }
+            .left-column h2:last-of-type, .left-column h3:last-child {
+                color: #000;
+              }
+            .right-column {
+              width: 75%;
+              float: right;
+              padding-top: 1em;
+
+
+			.code-left {
+				width: 60%;
+				float: left;
+				height: 92%;
+			}
+			.code-right {
+				width: 35%;
+				float: right;
+				padding-top: 1em;
+			}
+        </style>
+    </head>
+
+    <body>
+        <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
+        <!-- on lance remark -->
+        <script type="text/javascript">
+            var slideshow = remark.create({
+                sourceUrl: 'initiation-python.md',
+                // Enable or disable counting of incremental slides in the slide counting
+                countIncrementalSlides: false,
+                highlightLines: true
+            });
+
+
+            // renderMathInElement(document.body);
+            // Setup MathJax
+            MathJax.Hub.Config({
+                tex2jax: {
+                    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+                }
+            });
+            MathJax.Hub.Queue(function() {
+                $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+                    return(elem.SourceElement());
+                }).parent().addClass('has-jax');
+            });
+
+            MathJax.Hub.Configured();
+        </script>
+    </body>
+
+</html>
