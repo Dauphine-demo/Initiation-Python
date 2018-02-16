@@ -2335,7 +2335,7 @@ name: Projects
 ## Consignes
 * le projet doit être rendu par mail à jean-christophe.gay@dauphine.fr. Le
   sujet du mail commencera par [Python].
-* le projet sera rendu au plus tard le
+* le projet sera rendu au plus tard le 09/04/2018 à 23h59.
 * le fichier principal du projet ser exécutable, c'est à dire que l'on pourra
   lancer votre programme par la commande : python3 fichier.py arguments
 * le projet comportera :
